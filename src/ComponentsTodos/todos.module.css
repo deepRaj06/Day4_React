@@ -1,0 +1,134 @@
+body{
+    background-color: #f5c2dc;
+}
+.mainTodo{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    min-height: 400px;
+    margin: auto;
+    margin-top: 4rem;
+    /* background-color: rgb(233, 198, 152); */
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    /* padding: 1rem; */
+}
+
+.bgColor{
+    color: rgb(215, 254, 155);
+}
+
+.striked{
+    text-decoration: line-through;
+    background-color: rgb(158, 244, 158);
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.inputDiv{
+    position:relative;
+    margin-bottom:10px;
+}
+
+.addInput{
+    /* width: 80%;
+    margin: auto;
+    border: none;
+    border-radius: 6px;
+    height: 40px; */
+
+    height:30px;
+    width:86%;
+    padding-left:10px;
+    border-radius: 4px;
+    border:none;outline:none;
+    text-align: center;
+    font-size: medium;
+}
+
+/* .listDivWidth{
+    width: 104%;
+    padding: 0;
+
+} */
+
+.listItems{
+    min-height:30px;
+    width:90%;
+    /* padding-left:10px; */
+    border-radius: 4px;
+    border:none;outline:none;
+    text-align: center;
+    font-size: medium;
+    /* background-color: white; */
+    background-color: #f4fcff;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 4px;
+
+}
+
+.addbutton{
+    position:absolute;
+    left: 20px;
+    top: -4px;
+    border:none;
+    height:20px;
+    width:20px;
+    /* border-radius:100%; */
+    outline:none;
+    text-align:center;
+    font-weight:bold;
+    /* padding:2px; */
+    background: none;
+    font-size: xx-large;
+    box-sizing: border-box;
+  }
+  .addbutton:hover{
+    cursor:pointer;
+  }
+
+  .removeBtn:hover{
+      cursor: pointer;
+  }
+
+  /* remove btn */
+
+/* CSS */
+.removeBtn {
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Montserrat,sans-serif;
+  font-size: .9em;
+  margin: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* checkbox styling */
+/* This margin makes checkbox left aligned */
+.checkStyle, .listTextStyle{
+    margin-top: auto;
+    margin-bottom: auto;
+}
