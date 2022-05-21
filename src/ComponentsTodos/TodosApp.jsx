@@ -4,12 +4,17 @@ import {v4 as uuidv4} from 'uuid';
 import TodosList from './TodosList';
 import TodosItem from './TodosItem';
 import styles from './todos.module.css'
+import ShowCompletedTodosList from './ShowCompletedTodosList';
 
 
 export default function TodosApp() {
 
     // Step-1b
     const [todos, setTodos] = useState([]);
+
+    // State for showcompleted todos
+
+    const [show, setShow] = useState(false);
 
     // Step-1c
     const addTodo = (newTodo) => {
@@ -30,6 +35,12 @@ export default function TodosApp() {
         })
         setTodos(todoFilter);
     }
+
+    // Click function for show completed todos
+
+    // const showCompletedTodosList = () => {
+    //     setShow(true);
+    // }
   return (
     <div className={styles.mainTodo}>
         {/* TodosApp */}
@@ -43,6 +54,18 @@ export default function TodosApp() {
                 <TodosItem key={todo.id} todo={todo} value={todo.value} deleteTodo={deleteTodo}></TodosItem>
             ))}
         </TodosList>
+        <button 
+        className={styles.showCompletedToDos} 
+        onClick={ () => {
+        }}>
+            {/* <div {...show ? addTodo={addTodo} : ''}></div> */}
+            <span>SHOW COMPLETED TO-DOS</span>
+        </button>
+{/*         
+        <ShowCompletedTodosList >
+        <TodosItem key={todos.id} todo={todos} value={todos.value} deleteTodo={deleteTodo}></TodosItem>
+
+        </ShowCompletedTodosList> */}
 
     </div>
   )
